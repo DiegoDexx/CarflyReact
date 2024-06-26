@@ -79,7 +79,8 @@ export const ListVehicles = ({ openModalCreate, companyid, onClose }) => {
         } catch (error) {
             console.error('Error deleting vehicle:', error);
             setErrors(error.response ? error.response.data : 'Error deleting vehicle');
-            alert('Error al eliminar el vehículo.');
+            alert('No se puede eliminar el vehículo,  está asociado a una reserva.');
+            window.location.href="/profile"
         }
     };
 
