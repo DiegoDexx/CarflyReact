@@ -78,7 +78,7 @@ const SearchComponent = () => {
       <div className="banner">
         <div className="banner__content text-center">
           <div className="banner__img mb-4">
-            <img src="./src/assets/img/blue_car_background.jpg" alt="Car Park" className="img-fluid"/>
+            <img src="https://i.ibb.co/vqd3MzG/blue-car-background.jpg" alt="Car Park" className="img-fluid"/>
           </div>
           <style>
             {`
