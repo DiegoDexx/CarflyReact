@@ -13,7 +13,7 @@ const HeaderHomePage = ({ toggleLoginModal }) => {
       <style>
           {`
             .nav-link {
-              color: white;
+              color: black;
               text-decoration: none;
               padding: 12px;
             }
@@ -50,7 +50,7 @@ const HeaderHomePage = ({ toggleLoginModal }) => {
                 
                 <span className="user-options__link" onClick={toggleLoginModal}>
                   {isAuthenticated ? (
-                    
+                
                     <span onClick={logout} className="nav-link"> <i className="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</span>
                   ) :  <Link to="/login" className='nav-link'><i className="fa fa-sign-in" aria-hidden="true"></i> Iniciar sesión </Link>}
                 </span>

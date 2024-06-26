@@ -62,7 +62,10 @@
                 li:nth-child(-n + 3) {
                     margin: 0 auto;
                 }
+
             }
+
+
 
             @include mobile {
                 display: none;
@@ -72,6 +75,7 @@
         .user-options {
             &__item {
                 width: 140px;
+                
             }
             
             &__list {
@@ -80,7 +84,7 @@
                 list-style: none;
                 gap: 1.5em;
                 margin: 0 auto;
-
+                color: #000;
                 li a {
                     padding: 10px;
                     color: $primary-color;
@@ -136,9 +140,10 @@
                     list-style: none;
                     gap: 2.2em;
                     margin: 0 auto;
+                    color: black;
         
                     li a {
-                        color: $tertiary-color;
+                        color: $primary-color;
                         text-decoration: none;
                         display: block;
                         padding: 20px;

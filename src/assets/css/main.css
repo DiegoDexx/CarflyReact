@@ -386,6 +386,7 @@ body .overlay {
   list-style: none;
   gap: 1.5em;
   margin: 0 auto;
+  color: #000;
 }
 .header-landing .topbar .user-options__list li a {
   padding: 10px;
@@ -444,10 +445,11 @@ body .overlay {
     list-style: none;
     gap: 2.2em;
     margin: 0 auto;
+    color: black;
   }
   .header-landing .topbar .user-options__list li a,
   .header-landing .topbar .nav-bar__list li a {
-    color: rgb(255, 255, 255);
+    color: rgb(7, 6, 6);
     text-decoration: none;
     display: block;
     padding: 20px;
