@@ -62,110 +62,122 @@ const Register = ({ onClose, modalClass, onRegisterSuccess }) => {
 
   return (
     <div className={modalClass}>
-      <div className="modal-content">
-        <h2>Registrarse</h2>
-        <form onSubmit={handleSubmit} className="form">
-          <div className="form-group">
-            <label htmlFor="name" className="required">Nombre</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              className={`form-control ${errors.name ? 'is-invalid' : ''}`}
-              placeholder="Ingrese el nombre del usuario"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            {errors.name && <span className="text-danger">{errors.name}</span>}
-          </div>
-          <div className="form-group">
-            <label htmlFor="surname" className="required">Apellidos</label>
-            <input
-              type="text"
-              name="surname"
-              id="surname"
-              className={`form-control ${errors.surname ? 'is-invalid' : ''}`}
-              placeholder="Ingrese los apellidos del usuario"
-              value={formData.surname}
-              onChange={handleChange}
-              required
-            />
-            {errors.surname && <span className="text-danger">{errors.surname}</span>}
-          </div>
-          <div className="form-group">
-            <label htmlFor="NIF" className="required">NIF</label>
-            <input
-              type="text"
-              name="NIF"
-              id="NIF"
-              className={`form-control ${errors.NIF ? 'is-invalid' : ''}`}
-              placeholder="Ingrese el NIF del usuario"
-              value={formData.NIF}
-              onChange={handleChange}
-              required
-            />
-            {errors.NIF && <span className="text-danger">{errors.NIF}</span>}
-          </div>
-          <div className="form-group">
-            <label htmlFor="email" className="required">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className={`form-control ${errors.email ? 'is-invalid' : ''}`}
-              placeholder="Ingrese el email del usuario"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-            {errors.email && <span className="text-danger">{errors.email}</span>}
-          </div>
-          <div className="form-group">
-            <label htmlFor="password" className="required">Contraseña</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              className={`form-control ${errors.password ? 'is-invalid' : ''}`}
-              placeholder="Ingrese la contraseña del usuario"
-              value={formData.password}
-              onChange={handleChange}
-              required
-            />
-            {errors.password && <span className="text-danger">{errors.password}</span>}
-          </div>
-          <div className="form-group">
-            <label htmlFor="user_phone_number" className="required">Número de teléfono</label>
-            <input
-              type="text"
-              name="user_phone_number"
-              id="user_phone_number"
-              className={`form-control ${errors.user_phone_number ? 'is-invalid' : ''}`}
-              placeholder="Ingrese el número de teléfono del usuario"
-              value={formData.user_phone_number}
-              onChange={handleChange}
-              required
-            />
-            {errors.user_phone_number && <span className="text-danger">{errors.user_phone_number}</span>}
-          </div>
-          {/* Rol con valor cliente que será asignado por defecto */}
-          <div>
-            <input 
-              type="hidden" 
-              name="role" 
-              id='role'
-              value={formData.role}
-              onChange={handleChange}
-            />
-          </div>
-
-          {/* Otros campos si es necesario */}
-          <button type="submit">Registrarse</button>
-        </form> 
-        <button onClick={onClose} className="close-button">Cerrar</button>
-      </div>
+  <style>
+    {`
+      .error-message {
+        color: red;
+        margin-top: 10px;
+      }
+    `}
+  </style>
+  <div className="modal-inner">
+    <div className="modal-top">
+      <i className="material-icons">edit</i>
+      <br />
+      <h4>Registrarse</h4>
     </div>
+    <div className="modal-content">
+      <form onSubmit={handleSubmit} className="login-form">
+        <fieldset className="form-group">
+          <label htmlFor="name" className="required">Nombre</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            className={`form-control ${errors.name ? 'is-invalid' : ''}`}
+            placeholder="Ingrese el nombre del usuario"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          {errors.name && <span className="text-danger">{errors.name}</span>}
+        </fieldset>
+        <fieldset className="form-group">
+          <label htmlFor="surname" className="required">Apellidos</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            className={`form-control ${errors.surname ? 'is-invalid' : ''}`}
+            placeholder="Ingrese los apellidos del usuario"
+            value={formData.surname}
+            onChange={handleChange}
+            required
+          />
+          {errors.surname && <span className="text-danger">{errors.surname}</span>}
+        </fieldset>
+        <fieldset className="form-group">
+          <label htmlFor="NIF" className="required">NIF</label>
+          <input
+            type="text"
+            name="NIF"
+            id="NIF"
+            className={`form-control ${errors.NIF ? 'is-invalid' : ''}`}
+            placeholder="Ingrese el NIF del usuario"
+            value={formData.NIF}
+            onChange={handleChange}
+            required
+          />
+          {errors.NIF && <span className="text-danger">{errors.NIF}</span>}
+        </fieldset>
+        <fieldset className="form-group">
+          <label htmlFor="email" className="required">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+            placeholder="Ingrese el email del usuario"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          {errors.email && <span className="text-danger">{errors.email}</span>}
+        </fieldset>
+        <fieldset className="form-group">
+          <label htmlFor="password" className="required">Contraseña</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            className={`form-control ${errors.password ? 'is-invalid' : ''}`}
+            placeholder="Ingrese la contraseña del usuario"
+            value={formData.password}
+            onChange={handleChange}
+            required
+          />
+          {errors.password && <span className="text-danger">{errors.password}</span>}
+        </fieldset>
+        <fieldset className="form-group">
+          <label htmlFor="user_phone_number" className="required">Número de teléfono</label>
+          <input
+            type="text"
+            name="user_phone_number"
+            id="user_phone_number"
+            className={`form-control ${errors.user_phone_number ? 'is-invalid' : ''}`}
+            placeholder="Ingrese el número de teléfono del usuario"
+            value={formData.user_phone_number}
+            onChange={handleChange}
+            required
+          />
+          {errors.user_phone_number && <span className="text-danger">{errors.user_phone_number}</span>}
+        </fieldset>
+        {/* Rol con valor cliente que será asignado por defecto */}
+        <input 
+          type="hidden" 
+          name="role" 
+          id="role"
+          value={formData.role}
+          onChange={handleChange}
+        />
+
+        {/* Otros campos si es necesario */}
+        <button className="btn btn-primary" type="submit">Registrarse</button>
+      </form> 
+      <button onClick={onClose} className="close-button">Cerrar</button>
+    </div>
+  </div>
+</div>
   );
 };
 
