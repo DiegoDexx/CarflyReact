@@ -1,0 +1,32 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+@import "../components/buttons";
+@import "../components/separator";
+
+#facts {
+    background-image: linear-gradient(#080911, #262e5c), url('https://www.dropbox.com/s/u4pavmpgc9apoa3/facts.jpg?raw=1');
+    background-size: cover;
+    width: 100%;
+    padding: 80px 0 200px;
+    text-align: center;
+   
+  
+    .section-title {
+      color: white;
+      margin-bottom: 100px;
+    }
+  
+    .hours {
+      font-size: 3.5em;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 30px;
+    }
+  
+    .hour-detail {
+      font-size: 1.3em;
+      color: #fff;
+    }
+   
+  }
+  

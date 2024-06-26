@@ -1,0 +1,156 @@
+@import '../abstract/variables';
+@import '../abstract/mixins';
+
+// Mezclas
+@mixin flex-container($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin fade-in($time) {
+  animation: fadeIn $time ease-in-out;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin header-button($bg, $color, $border, $padding) {
+  background: $bg;
+  color: $color;
+  border: $border;
+  padding: $padding;
+}
+
+// Estilos del modal
+.myModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: $tertiary-color;
+  border-radius: 10px;
+  padding: 0;
+  width: 60%;
+  height: 90rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  @include fade-in(1s);
+
+  @media (max-height: 800px) {
+    max-height: 95vh; // Ajustar la altura máxima para pantallas de portátiles
+  }
+
+  .modal-content {
+    padding: 20px;
+
+    h2 {
+      color: $primary-color;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form {
+      .form-group {
+        margin-bottom: 10px;
+
+        label {
+          display: block;
+          margin-bottom: 10px;
+          color: $primary-color;
+        }
+
+        input,
+        select {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid $primary-color;
+          border-radius: 5px;
+        }
+
+        .is-invalid {
+          border-color: red;
+        }
+
+        .text-danger {
+          color: red;
+          font-size: 12px;
+        }
+      }
+
+      button[type='submit'] {
+        @include flex-container(row,center ,center );
+        width: 30%;
+        padding: 10px;
+        background-color: $primary-color;
+        color: $tertiary-color;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($tertiary-color, 10%);
+        }
+      }
+ 
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      border: none;
+      font-size: 20px;
+      color: #000000;
+      cursor: pointer;
+    }
+    
+    .close-button:hover {
+      color: #f00;
+    }
+
+    }
+
+
+  // Estilos para hacer el formulario responsive
+  @include mobile {
+    width: 90%;
+    height: auto;
+
+    .modal-content {
+      padding: 15px;
+
+      .form {
+        .form-group {
+          margin-bottom: 15px;
+
+          input,
+          select {
+            padding: 8px;
+          }
+        }
+
+        button[type='submit'] {
+          padding: 8px;
+        }
+      }
+    }
+    
+  
+  }
+
+
+  }
+
+  .modal-hidden {
+    display: none;
+  }

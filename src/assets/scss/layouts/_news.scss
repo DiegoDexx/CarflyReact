@@ -1,0 +1,107 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+@import "../components/buttons";
+@import "../components/separator";
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Adjusted height for better visual balance */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    padding: 1rem;
+    overflow: hidden; /* Ensure child elements don't overflow */
+
+  
+    .hero-banner-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the container */
+      opacity: 0.8; /* Make the image opaque */
+      z-index: 1;
+    }
+
+    .hero-banner-content {
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: left;
+        max-width: 700px;
+
+        h2 {
+            font-size: 29px;
+            color: $fourth-color;
+            margin-bottom: 1rem;
+            font-weight: 700;
+
+            .percent {
+                margin-left: 0.5rem; /* Add some space before the span */
+                padding: 0.2rem 0.5rem; /* Add padding inside the span */
+                border: 3px solid $fourth-color;
+                color: $fourth-color;
+                font-size: 32px;
+                display: inline-block; /* Ensure padding and margin apply correctly */
+            }
+        }
+
+        p {
+            font-size: 21px;
+            margin-bottom: 1rem;
+            color: black;
+        }
+
+        .btn {
+            background-color: #5161C1;
+            color: #ffffff;
+            font-size: 18px;
+            border: none;
+            padding: 0.5rem 1rem;
+            text-transform: uppercase;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                background-color: #fcfcff;
+                color: #5161C1;
+            }
+        }
+    }
+}
+
+// Responsive adjustments
+@include mobile() {
+    .hero-banner {
+        justify-content: center; /* Center content horizontally */
+        text-align: center; /* Center text for smaller screens */
+
+        .hero-banner-content {
+            padding: 1rem;
+            max-width: 90%;
+            text-align: center; /* Center text for smaller screens */
+
+            h2 {
+                font-size: 24px;
+
+                .percent {
+                    font-size: 26px;
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
