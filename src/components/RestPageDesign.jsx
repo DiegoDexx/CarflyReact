@@ -141,46 +141,7 @@ export const RestPage = () => {
     
 
         {/* Haz un footer repsonsive con boostrap muy senicllo y adaptable */}
-        <footer className="footer">
-    <div className="container">
-        <div className="row">
-            <div className="col-md-4 footer-section">
-                <h3 className="footer-title">Carfly</h3>
-                <p className="footer-description">Carfly es una empresa de alquiler de coches que ofrece servicios de alta calidad a precios muy competitivos.</p>
-            </div>
-            <div className="col-md-4 footer-section">
-                <h3 className="footer-title">Enlaces</h3>
-                <ul className="footer-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Novedades</a></li>
-                    <li><a href="#">Promociones</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                </ul>
-            </div>
-            <div className="col-md-4 footer-section">
-                <h3 className="footer-title">Contacto</h3>
-                <p className="footer-description">Si tienes alguna duda o sugerencia, no dudes en ponerte en contacto con nosotros a través de nuestro formulario de contacto.</p>
-            </div>
-        </div>
-    
-    <div className="footer-bottom">
-        <div className="container">
-            <div className="row">
-                <div className="col-md-6">
-                    <p>&copy; 2021 Carfly. Todos los derechos reservados.</p>
-                </div>
-                <div className="col-md-6">
-                    <ul className="footer-social">
-                        <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</footer>
+       
 
 
        
