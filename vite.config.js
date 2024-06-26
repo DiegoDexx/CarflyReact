@@ -9,5 +9,5 @@ export default defineConfig({
       'text/javascript': ['js', 'jsx'],
     },
   },
-  // base: 'https://DiegoDexx.github.io/CarflyReact/'
+ base: 'https://DiegoDexx.github.io/CarflyReact/'
 })

@@ -8,7 +8,7 @@ export const RestPage = () => {
           <div className="col-md-6 container-img">
             
          <div className="col-md-6">
-                  <img className="img1" src="/src/assets/img/car_rented.png"></img>
+                  <img className="img1" src="./src/assets/img/car_rented.png"></img>
         </div>
 
           </div>
@@ -37,7 +37,7 @@ export const RestPage = () => {
           </div>
           <div className="col-md-6 container-img">
             <div className="photo img3">
-              <img src="/src/assets/img/taxi-app-concept.png" alt="Image 3" height="300px" width="400px" />
+              <img src="./src/assets/img/taxi-app-concept.png" alt="Image 3" height="300px" width="400px" />
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ export const RestPage = () => {
         <a href="#features" className="btn btn-primary">¡Averiguar!</a>
     </div>
 
-    <img src="src/assets/img/happy-delivery-guy-holding-box.jpg" alt="Delivery Guy" class="hero-banner-image" />
+    <img src="./src/assets/img/happy-delivery-guy-holding-box.jpg" alt="Delivery Guy" class="hero-banner-image" />
 
 </section>
 
