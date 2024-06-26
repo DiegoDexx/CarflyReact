@@ -72,7 +72,7 @@ const Register = ({ onClose, modalClass, onRegisterSuccess }) => {
   </style>
   <div className="modal-inner">
     <div className="modal-top">
-      <i className="material-icons">BIENVENIDO AL FORMULARIO DE REGISTRO</i>
+      <i className="material-icons">BIENVENIDO!</i>
       <br />
       <h4>Registrarse</h4>
     </div>

@@ -1481,16 +1481,45 @@ body .overlay {
   .myModal {
     width: 90%;
     height: auto;
+    position: absolute;
+    top: 50%;
   }
   .myModal .modal-content {
     padding: 15px;
+  }
+  .myModal .modal-content .form {
+    font-size: 12px;
   }
   .myModal .modal-content .form .form-group {
     margin-bottom: 15px;
   }
   .myModal .modal-content .form .form-group input,
   .myModal .modal-content .form .form-group select {
+    padding: 6px;
+  }
+  .myModal .modal-content .form button[type=submit] {
     padding: 8px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
+  .myModal {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+  }
+  .myModal .modal-content {
+    padding: 15px;
+  }
+  .myModal .modal-content .form {
+    font-size: 12px;
+  }
+  .myModal .modal-content .form .form-group {
+    margin-bottom: 15px;
+  }
+  .myModal .modal-content .form .form-group input,
+  .myModal .modal-content .form .form-group select {
+    padding: 6px;
   }
   .myModal .modal-content .form button[type=submit] {
     padding: 8px;

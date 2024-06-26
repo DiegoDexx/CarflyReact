@@ -126,16 +126,21 @@
     width: 90%;
     height: auto;
 
+    position: absolute;
+    top: 50%;
+
     .modal-content {
       padding: 15px;
 
       .form {
+        font-size: 12px;
+
         .form-group {
           margin-bottom: 15px;
 
           input,
           select {
-            padding: 8px;
+            padding: 6px;
           }
         }
 
@@ -146,6 +151,37 @@
     }
     
   
+  }
+
+  @include laptop {
+    width: 70%;
+
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+
+    .modal-content {
+      padding: 15px;
+
+      .form {
+        font-size: 12px;
+
+        .form-group {
+          margin-bottom: 15px;
+
+          input,
+          select {
+            padding: 6px;
+          }
+        }
+
+        button[type='submit'] {
+          padding: 8px;
+        }
+      }
+    }
+
   }
 
 
