@@ -39,6 +39,8 @@ import { getTokenFromStorage, getUserIdFromStorage } from '../../functions/stora
             });
 
             console.log('Company registered:', response.data);
+            {/**RELOAD PAGE */}
+            window.location.reload();
             setErrors({});
             // Clear form fields after successful registration
             setCompanyName('');
