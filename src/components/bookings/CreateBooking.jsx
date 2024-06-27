@@ -144,13 +144,14 @@ a
            
           
           <fieldset className="form-group">
-            <label htmlFor="bookingType">Tipo de Reserva</label>
+            <label htmlFor="bookingType"></label>
             <select 
               id="bookingType" 
               value={bookingType} 
               onChange={e => setBookingType(e.target.value)} 
               required
               className={`form-control ${errors.booking_type ? 'is-invalid' : ''}`}
+              placeholder='Tipo de reserva'
             >
               <option value="daily">Básico(Sin lavado, tanque a mitad)</option>
               <option value="weekly">Plus(Lavado, tanque lleno)</option>
@@ -159,7 +160,7 @@ a
           </fieldset>
 
           <fieldset className="form-group">
-            <label htmlFor="startBookingDate">Fecha de Inicio</label>
+            <label htmlFor="startBookingDate"></label>
             <input 
               type="date" 
               id="startBookingDate" 
@@ -167,11 +168,12 @@ a
               onChange={e => setStartBookingDate(e.target.value)} 
               required 
               className={`form-control ${errors.start_booking_date ? 'is-invalid' : ''}`} 
+              placeholder='Fecha de inicio de reserva'
             />
             {errors.start_booking_date && <span className="error-message">{errors.start_booking_date}</span>}
           </fieldset>
           <fieldset className="form-group">
-            <label htmlFor="endingBookingDate">Fecha de Fin</label>
+            <label htmlFor="endingBookingDate"></label>
             <input 
               type="date" 
               id="endingBookingDate" 
@@ -179,6 +181,7 @@ a
               onChange={e => setEndingBookingDate(e.target.value)} 
               required 
               className={`form-control ${errors.ending_booking_date ? 'is-invalid' : ''}`} 
+              placeholder='Fecha de fin de reserva'
             />
             {errors.ending_booking_date && <span className="error-message">{errors.ending_booking_date}</span>}
           </fieldset>
