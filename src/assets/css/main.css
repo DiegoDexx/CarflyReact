@@ -1503,7 +1503,7 @@ body .overlay {
 }
 @media only screen and (min-width: 768px) and (max-width: 1600px) {
   .myModal {
-    width: 70%;
+    width: 50%;
     height: auto;
     position: absolute;
     top: 50%;
@@ -1938,7 +1938,7 @@ body .overlay {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 500;
+  z-index: 10000;
   width: 100%;
   max-width: 500px;
 }
