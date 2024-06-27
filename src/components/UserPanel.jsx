@@ -162,7 +162,7 @@ export const MyProfile = ({ openModal, openCreateCompany }) => {
               <hr />
               <div className="row">
                 <div className="col-sm-3">
-                  <button className="edit-button" onClick={openModal}>Editar</button>
+                  <button className="btn btn-warning" onClick={openModal}>Editar</button>
                 </div>
                 <div className="col-sm-9"></div>
               </div>
