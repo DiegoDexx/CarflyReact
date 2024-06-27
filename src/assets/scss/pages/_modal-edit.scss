@@ -7,9 +7,21 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 500;
+  z-index: 10000;
   width: 100%;
   max-width: 500px;
+
+  
+@include laptop {
+  /*Que se vea en posición absolute*/
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  width: 70%;
+
+
+  }
+  
 }
 
 .modal-inner {
@@ -133,6 +145,8 @@
     color: #999;
     text-decoration: none;
   }
+
+
 }
 
 .overlay {

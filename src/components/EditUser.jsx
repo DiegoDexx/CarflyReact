@@ -77,9 +77,27 @@ export const EditUser = ({ onClose, modalClass }) => {
       </style>
       <div className="modal-inner">
         <div className="modal-top">
-          <i className="material-icons">edit</i>
-          <br />
-          <h4>Editar perfil</h4>
+          <h4>Editar perfil</h4>{/*icono de lapiz de font awesome*/}<i className="fa fa-pencil" aria-hidden="true"></i>
+          <style>
+            {`
+              .modal-top {
+
+                background-color: #f8f9fa;
+                color: white;
+                display: flex;
+                padding: 5px;
+                border-bottom: 1px solid #e9ecef;
+              }
+                /* Agregar estilos para el icono de lapiz, que quede en flex */
+                .fa-pencil {
+                  font-size: 10px;
+                  margin-left: 10px;
+                  color: white;
+                }
+                  
+
+           ` }
+          </style>
         </div>
         <div className="modal-content">
           <form className="login-form" onSubmit={handleSubmit}>
