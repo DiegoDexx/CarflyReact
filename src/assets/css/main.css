@@ -334,9 +334,9 @@ body .overlay {
 }
 .header-landing .topbar .logo img {
   object-fit: cover;
-  height: 80%;
-  width: 230px;
-  padding: 10px;
+  height: 70%;
+  width: 200px;
+  padding: 5px;
 }
 .header-landing .topbar #menu-toggle,
 .header-landing .topbar #menu-toggle2 {
@@ -415,13 +415,13 @@ body .overlay {
   .header-landing .topbar .responsive-bar-icon {
     display: block;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 28px;
     color: black;
   }
   .header-landing .topbar .responsive-bar-icon2 {
     display: block;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 28px;
     color: black;
   }
   .header-landing .topbar .user-options,
