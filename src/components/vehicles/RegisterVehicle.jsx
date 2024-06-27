@@ -60,6 +60,9 @@ export const RegisterVehicle = ({ companyId, onCloseCreate }) => {
             });
 
             console.log('Vehicle registered:', response.data);
+            {/*REFERESH THE PAGE*/ }
+            window.location.reload();
+            
             setErrors({});
             // Clear form fields after successful registration
             setCompanyId('');
@@ -224,8 +227,8 @@ export const RegisterVehicle = ({ companyId, onCloseCreate }) => {
                                 required
                             >
                                 <option value="">Seleccionar...</option>
-                                <option value="booked">Libre</option>
-                                <option value="free">Reservado</option>
+                                <option value="free">Libre</option>
+                                <option value="booked">Reservado</option>
                             </select>
                             {errors.vehicle_state && <span className="error-message">{errors.vehicle_state}</span>}
                         </fieldset>
