@@ -30,7 +30,7 @@ const HeaderHomePage = ({ toggleLoginModal }) => {
             <i className="fa fa-home" aria-hidden="true"></i>
           </label>
           <div className="logo">
-            <img src="https://i.ibb.co/qsF6r1Z/carfly-logo-black.png" className="logo__image" alt="Carfly Logo" />
+            <img src="https://i.ibb.co/tM8vy5D/logo-no-background.png" className="logo__image" alt="Carfly Logo" />
           </div>
           <input type="checkbox" id="menu-toggle" />
           <label htmlFor="menu-toggle" className="responsive-bar-icon">
