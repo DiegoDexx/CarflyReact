@@ -10,6 +10,13 @@
   z-index: 10000;
   width: 100%;
   max-width: 500px;
+
+  @include laptop(){
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    width: 70%;
+  }
 }
 
 .modal-inner {

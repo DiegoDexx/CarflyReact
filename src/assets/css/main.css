@@ -1942,6 +1942,14 @@ body .overlay {
   width: 100%;
   max-width: 500px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
+  .modal-registerCompany {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    width: 70%;
+  }
+}
 
 .modal-inner {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
