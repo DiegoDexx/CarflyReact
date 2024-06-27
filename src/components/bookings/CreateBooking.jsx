@@ -108,7 +108,7 @@ export const CreateBookingComponent = ({ onCloseCreate, vehicleId }) => {
                     margin-top: 10px;
                     font-size: 12px;
                 }
-a
+
                 label{
                     color: black;
                     font-size: 12px; !important

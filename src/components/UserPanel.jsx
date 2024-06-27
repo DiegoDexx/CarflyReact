@@ -79,6 +79,8 @@ export const MyProfile = ({ openModal, openCreateCompany }) => {
   };
 
   return (
+    <>
+   <br></br>
     <div className="row">
       <h3>Panel de Usuario</h3>
       <style>
@@ -187,5 +189,6 @@ export const MyProfile = ({ openModal, openCreateCompany }) => {
      
       </div>
     </div>
+    </>
   );
 };
