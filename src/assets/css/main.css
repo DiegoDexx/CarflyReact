@@ -336,7 +336,7 @@ body .overlay {
   object-fit: cover;
   height: 70%;
   width: 200px;
-  padding: 5px;
+  padding: 10px;
 }
 .header-landing .topbar #menu-toggle,
 .header-landing .topbar #menu-toggle2 {
