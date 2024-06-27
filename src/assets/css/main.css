@@ -1948,6 +1948,7 @@ body .overlay {
     transform: translate(-50%, -50%);
     z-index: 10000;
     width: 70%;
+    top: 80%;
   }
 }
 
