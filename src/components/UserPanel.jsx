@@ -84,7 +84,6 @@ export const MyProfile = ({ openModal, openCreateCompany }) => {
    <br></br>
    <br></br>
    <br></br>
-   <br></br>
     <div className="row">
       <h3>Panel de Usuario</h3>
       <style>
